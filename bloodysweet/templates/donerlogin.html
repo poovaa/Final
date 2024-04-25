@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donor Login</title>
+</head>
+
+  {%load static%}
+  <link rel="stylesheet" type="text/css" href="{% static 'stylee.css' %}">
+<body>
+
+<center><h2>Donor signup</h2>
+<form method=POST action='/bloodapp/addoner/'>{%csrf_token%}
+
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <label for="Blood Bank">BloodBank:</label><br>
+  <input type="text" id="bloodbank" name="bloodbank" required><br><br>
+  
+  <label for="district">District:</label><br>
+  <select type="text" id="district" name="district" required style="width:14%;">
+   <option value="Ariyalur">Ariyalur</option>
+      <option value="Chengalpattu">Chengalpattu</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Coimbatore">Coimbatore</option>	
+      <option value="Cuddalore">Cuddalore</option>
+      <option value="Dharmapuri">Dharmapuri</option>
+      <option value="Dindigul">Dindigul</option>
+      <option value="Erode">Erode</option>
+      <option value="Kallakurichi">Kallakurichi</option>
+      <option value="Kanchipuram">Kanchipuram</option>
+      <option value="Kanyakumari">Kanyakumari</option>
+      <option value="Karur">Karur</option>
+      <option value="Krishnagiri">Krishnagiri</option>
+      <option value="Madurai">Madurai</option>
+      <option value="Nagapattinam">Nagapattinam</option> 
+      <option value="Namakkal">Namakkal</option>
+      <option value="Nilgiris">Nilgiris</option>
+      <option value="Perambalur">Perambalur</option>
+      <option value="Pudukkottai">Pudukkottai</option>
+      <option value="Ramanathapuram">Ramanathapuram</option>
+      <option value="Ranipet">Ranipet</option>
+      <option value="Salem">Salem</option>
+      <option value="Sivaganga">Sivaganga</option>
+      <option value="Tenkasi">Tenkasi</option>
+      <option value="Thanjavur">Thanjavur</option>
+      <option value="Theni">Theni</option>
+      <option value="Thoothukudi">Thoothukudi</option>
+      <option value="Tiruchirappalli">Tiruchirappalli</option>
+      <option value="Tirunelveli">Tirunelveli</option>
+      <option value="Tirupathur">Tirupathur</option>
+      <option value="Tiruppur">Tiruppur</option>
+      <option value="Tiruvallur">Tiruvallur</option>
+      <option value="Tiruvannamalai">Tiruvannamalai</option>
+      <option value="Tiruvarur">Tiruvarur</option>
+      <option value="Vellore">Vellore</option>
+      <option value="Viluppuram">Viluppuram</option>
+      <option value="Virudhunagar">Virudhunagar</option>
+      </select><br><br>
+  
+  <label for="number">Number:</label><br>
+  <input type="text" id="number" name="number" required><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="Password">Password:</lable><br>
+  <input type="password" id="password" name="password" required><br>
+  <br>
+  
+  <label for="bloodgroup">BloodGroup:</label><br>
+  <select type="text" id="bloodgroup" name="bloodgroup" required>
+     <option value="A+">A+</option>
+     <option value="A-">A-</option>
+     <option value="B+">B+</option>
+     <option value="B-">B-</option>
+     <option value="AB+">AB+</option>
+     <option value="AB-">AB-</option>
+     <option value="O+">O+</option>
+     <option value="O-">O-</option>
+     </select><br><br>
+  
+  
+  
+  <center>
+  <button type="submit" style="background-color: #4CAF50; /* Green */
+                               border: none;
+                               color: white;
+                               padding: 15px 32px;
+                               text-align: center;
+                               text-decoration: none;
+                               display: inline-block;
+                               font-size: 16px;
+                               margin: 4px 2px;
+                               cursor: pointer;
+                               border-radius: 10px;">Sign In</button>
+</center>
+
+</form>
+
+</body>
+</html>
+
